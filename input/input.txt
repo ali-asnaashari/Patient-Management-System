@@ -1,0 +1,114 @@
+
+        /** Sample Input1 Corrected
+         System.out.println(ANSI_YELLOW + "Reception One DO : ");
+         System.out.print(ANSI_RESET);
+         Reception receptionOne = new Reception();
+         receptionOne.insertPatient(new Patient(10, 7));
+         receptionOne.insertPatient(new Patient(4, -3));
+         receptionOne.disPlayPatient();
+         receptionOne.serveFirst();
+         receptionOne.disPlayPatient();
+         receptionOne.serveFirst();
+         receptionOne.disPlayPatient();
+         System.out.println(ANSI_YELLOW + "Reception One End Work ");
+         System.out.print(ANSI_RESET);
+         */
+
+
+        /** Sample Input2 Corrected 
+         System.out.println(ANSI_YELLOW + "Reception Two DO : ");
+         System.out.print(ANSI_RESET);
+         Reception receptionTwo = new Reception();
+         receptionTwo.insertPatient(new Patient(10, 7));
+         receptionTwo.insertPatient(new Patient(4, -3));
+         receptionTwo.disPlayPatient();
+         receptionTwo.serveSickest();
+         receptionTwo.disPlayPatient();
+         receptionTwo.serveSickest();
+         receptionTwo.disPlayPatient();
+         System.out.println(ANSI_YELLOW + "Reception Two End Work ");
+         System.out.print(ANSI_RESET);
+         */
+
+
+        /** Sample Input3 Corrected
+         System.out.println(ANSI_YELLOW + "Reception Three DO : ");
+         System.out.print(ANSI_RESET);
+         Reception receptionThree = new Reception();
+         receptionThree.insertPatient(new Patient(10, 7));
+         receptionThree.insertPatient(new Patient(4, -3));
+         receptionThree.insertPatient(new Patient(7, 13));
+         receptionThree.disPlayPatient();
+         receptionThree.updatePatient(4,15);
+         receptionThree.disPlayPatient();
+         receptionThree.serveFirst();
+         receptionThree.disPlayPatient();
+         receptionThree.serveFirst();
+         receptionThree.disPlayPatient();
+         receptionThree.serveFirst();
+         receptionThree.disPlayPatient();
+         System.out.println(ANSI_YELLOW + "Reception Three End Work ");
+         System.out.print(ANSI_RESET);
+         */
+
+
+        /** Sample Input4 Corrected
+         System.out.println(ANSI_YELLOW + "Reception Four DO : ");
+         System.out.print(ANSI_RESET);
+         Reception receptionFour = new Reception();
+         receptionFour.insertPatient(new Patient(10, 7));
+         receptionFour.insertPatient(new Patient(4, -3));
+         receptionFour.insertPatient(new Patient(7, 13));
+         receptionFour.insertPatient(new Patient(5, 4));
+         receptionFour.disPlayPatient();
+         receptionFour.updatePatient(7,-8);
+         receptionFour.disPlayPatient();
+         receptionFour.serveSickest();
+         receptionFour.disPlayPatient();
+         receptionFour.serveSickest();
+         receptionFour.disPlayPatient();
+         receptionFour.serveFirst();
+         receptionFour.disPlayPatient();
+         receptionFour.serveFirst();
+         receptionFour.disPlayPatient();
+         System.out.println(ANSI_YELLOW + "Reception Four End Work ");
+         System.out.print(ANSI_RESET);
+         */
+
+
+         /** Sample Input5 Corrected
+         System.out.println(ANSI_YELLOW + "Reception Five DO : ");
+         System.out.print(ANSI_RESET);
+         Reception receptionFive = new Reception();
+         receptionFive.insertPatient(new Patient(1,9));
+         receptionFive.insertPatient(new Patient(2,5));
+         receptionFive.insertPatient(new Patient(3,10));
+         receptionFive.insertPatient(new Patient(4,4));
+         receptionFive.insertPatient(new Patient(5,6));
+         receptionFive.insertPatient(new Patient(6,11));
+         receptionFive.insertPatient(new Patient(7,-1));
+         receptionFive.insertPatient(new Patient(8,1));
+         receptionFive.insertPatient(new Patient(9,2));
+
+         receptionFive.disPlayPatient();
+         receptionFive.serveFirst();
+         receptionFive.disPlayPatient();
+         receptionFive.updatePatient(7,90);
+         receptionFive.disPlayPatient();
+         receptionFive.serveSickest();
+         receptionFive.disPlayPatient();
+         receptionFive.serveFirst();
+         receptionFive.disPlayPatient();
+         receptionFive.serveSickest();
+         receptionFive.disPlayPatient();
+         receptionFive.serveFirst();
+         receptionFive.disPlayPatient();
+         receptionFive.updatePatient(4,100);
+         receptionFive.disPlayPatient();
+         receptionFive.serveSickest();
+         receptionFive.disPlayPatient();
+         receptionFive.updatePatient(7,-1);
+         receptionFive.disPlayPatient();
+         receptionFive.serveFirst();
+         receptionFive.disPlayPatient();
+         */
