@@ -49,7 +49,7 @@ public class AVLTree {
         if (root == null)
             return new AVLNode(patient);
 
-        if (patient.getPatientHealthMeasure() < root.patient.getPatientHealthMeasure())
+        if (patient.getPatientHealthMeasure() <= root.patient.getPatientHealthMeasure())
             root.leftChild = insertWithOrderHealth(root.leftChild, patient);
         else
             root.rightChild = insertWithOrderHealth(root.rightChild, patient);
@@ -108,12 +108,8 @@ public class AVLTree {
                     root = temp;
             }
             else {
-
                 AVLNode temp = minValueNode(root.rightChild);
-
-                root.patient.setPatientKey(temp.patient.getPatientKey());
-                root.patient.setPatientHealthMeasure(temp.patient.getPatientHealthMeasure());
-
+                root = temp;//f
                 root.rightChild = deleteNodeMainKey(root.rightChild, temp.patient);
             }
         }
@@ -178,8 +174,9 @@ public class AVLTree {
 
                 AVLNode temp = minValueNode(root.rightChild);
 
-                root.patient.setPatientKey(temp.patient.getPatientKey());
-                root.patient.setPatientHealthMeasure(temp.patient.getPatientHealthMeasure());
+//                root.patient.setPatientKey(temp.patient.getPatientKey());
+//                root.patient.setPatientHealthMeasure(temp.patient.getPatientHealthMeasure());
+                root = temp;
 
                 root.rightChild = deleteNodeMainHealth(root.rightChild, temp.patient);
             }
@@ -273,8 +270,9 @@ public class AVLTree {
 
     public void updatePatient(int key,int health,int code) {
 
-        if (code == 0)
+        if (code == 0) {
             deleteNodeKey(find(key));
+        }
         else if (code == 1) {
             deleteNodeHealth(findHealth(health));
         }
@@ -286,10 +284,12 @@ public class AVLTree {
         while (current != null) {
             int comparison = key - (current.patient.getPatientKey());
             if (comparison == 0) {
+
                 return current.patient;
             }
-            else if (comparison < 0)
+            else if (comparison < 0) {
                 current = current.leftChild;
+            }
             else
                 current = current.rightChild;
         }

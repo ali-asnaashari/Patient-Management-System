@@ -22,7 +22,7 @@ public class Deque {
         Size = 0;
     }
 
-    public boolean isEmpty() { return (front == null); }
+    public boolean isEmpty() { return (rear == null); }
 
     public int size() { return Size; }
 

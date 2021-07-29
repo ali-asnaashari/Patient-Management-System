@@ -4,6 +4,7 @@ public class Reception {
     private final AVLTree patientStorageHealthAvl = new AVLTree();
     private final Deque patientStorageQueue = new Deque();
 
+
     /** Line color */
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_RED = "\u001B[31m";
@@ -21,9 +22,9 @@ public class Reception {
         System.out.println("\n" + "\t \t" + ANSI_RED +  "--> ServeFirst " + ANSI_RED);
         System.out.println(ANSI_RESET);
         while (true) {
-        Patient patientDelete = patientStorageQueue.deleteFront();
-        Patient patientDeleteOriginal = patientStorageKeyAvl.find(patientDelete.getPatientKey());
-        if (patientDeleteOriginal.getPatientKey() != 0) {
+            Patient patientDelete = patientStorageQueue.deleteFront();
+            Patient patientDeleteOriginal = patientStorageKeyAvl.find(patientDelete.getPatientKey());
+            if (patientDeleteOriginal.getPatientKey() != 0) {
                 System.out.println("\t \t \t" + ANSI_BLUE + patientDeleteOriginal.getPatientKey() + " " + patientDeleteOriginal.getPatientHealthMeasure());
                 System.out.print(ANSI_RESET);
                 patientStorageKeyAvl.deleteNodeKey(patientDeleteOriginal);
